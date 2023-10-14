@@ -1,0 +1,18 @@
+{
+  "name": "hackathonemp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "fastify": "^4.22.2",
+    "fastify-websocket": "^4.3.0",
+    "prisma": "^5.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx fastify start ./app.js -c ./config.js -p 3001 --options"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
