@@ -32,22 +32,6 @@ module.exports = async function (fastify, opts) {
 
 
 };
-// (async () => {
-// 	const browser = await require('./bypasses/workink.js').browser();
-// 	process.on('exit', async () => {
-// 		console.log('closing browser!')
-// 		console.log(browser)
-// 		if (!!browser) {
-// 			await browser.close();
-// 			console.log('closed browser!')
-// 		}
-// 		// console.log('Performing cleanup...');
-// 		// await prisma.$disconnect();
-// 		// console.log('Cleanup complete.');
-// 		// console.log('Server stopped.');
-// 		// process.exit(0);
-// 	})
-// })();
 
 module.exports.options = {
 	trustProxy: true,
