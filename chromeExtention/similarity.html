@@ -180,7 +180,7 @@
                     <br class="home-text16" />
                     <br class="home-text17" />
                   </p>
-                  <a href="https://iamgay.com" class="home-link">
+                  <a href="https://iamgay.com" class="home-link" id="ogGa">
                     <h1 class="home-text18">No, I'm right.</h1>
                   </a>
                 </div>
@@ -210,7 +210,8 @@
         var ogWebsite = url.searchParams.get("website");
   
         var inputElement = document.getElementById("fromWebsite");
-  
+        document.getElementById("ogGa").href = url.searchParams.get("og");
+        document.getElementById("fromWebsite");
         if (inputElement) {
           // Update the placeholder attribute
           inputElement.placeholder = ogWebsite;
