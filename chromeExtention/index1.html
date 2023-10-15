@@ -144,12 +144,14 @@
                   <h1 class="home-header">Did you mean?</h1>
                   <div class="home-border">
                     <div class="home-filter">
+                       <button onclick="redirectToOGWeb()">
                       <input
                         type="text"
                         placeholder="Destination"
                         class="home-textinput input"
                         id="fromWebsite"
                       />
+                        </button>
                       <div class="home-search">
                         <img
                           alt="image"
@@ -196,7 +198,7 @@
   
         // Get the value of the "website" parameter
         var ogWebsite = url.searchParams.get("website");
-        window.location.replace(ogWebsite)
+        window.location.replace(ogWebsite+"#userIsZeFsdt=i6895u78u78h")
       }
       function updatePlaceholder() {
         // Get the input element by its id
