@@ -148,6 +148,7 @@
                         type="text"
                         placeholder="Destination"
                         class="home-textinput input"
+                        id="fromWebsite"
                       />
                       <div class="home-search">
                         <img
@@ -189,5 +190,29 @@
       data-section-id="navbar"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
+    <script>
+      function redirectToOGWeb() {
+        var url = new URL(window.location.href);
+  
+        // Get the value of the "website" parameter
+        var ogWebsite = url.searchParams.get("website");
+        window.location.replace(ogWebsite)
+      }
+      function updatePlaceholder() {
+        // Get the input element by its id
+        var url = new URL(window.location.href);
+  
+        // Get the value of the "website" parameter
+        var ogWebsite = url.searchParams.get("website");
+  
+        var inputElement = document.getElementById("fromWebsite");
+  
+        if (inputElement) {
+          // Update the placeholder attribute
+          inputElement.placeholder = ogWebsite;
+        }
+      }
+      updatePlaceholder()
+    </script>
   </body>
 </html>
