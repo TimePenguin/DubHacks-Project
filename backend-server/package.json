@@ -4,13 +4,24 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "fastify": "^4.22.2",
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/cors": "^8.4.0",
+    "@mirzazeyrek/node-resemble-js": "^1.2.1",
+    "@prisma/client": "^5.4.2",
+    "axios": "^1.5.1",
+    "csv-parser": "^3.0.0",
+    "fastify": "^4.24.1",
+    "fastify-cli": "^5.8.0",
+    "fastify-plugin": "^4.5.1",
     "fastify-websocket": "^4.3.0",
-    "prisma": "^5.4.2"
+    "i": "^0.3.7",
+    "npm": "^10.2.0",
+    "prisma": "^5.4.2",
+    "string-similarity": "^4.0.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx fastify start ./app.js -c ./config.js -p 3001 --options"
+    "start": "npx fastify start ./server.js -c ./config.js -p 3000 --options"
   },
   "keywords": [],
   "author": "",
